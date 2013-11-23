@@ -4,14 +4,14 @@ localserver
 Virtualised local server using Vagrant, Ubuntu 12.04, and Vesta Control Panel.  All are open source and free.
 
 
-Vagrant
+[Vagrant](http://www.vagrantup.com)
 ----------------------------
 * using the minimum and lightweight provisioner: shell provisioner
 * using the most commonly used provider: virtualbox
 * using the most famous and stable box/os: Ubuntu 12.04 x64
 
 
-Vesta Control Panel
+[Vesta Control Panel](http://vestacp.com/)
 ----------------------------
 * Web Server
 * DNS Server
@@ -40,6 +40,7 @@ System Requirements
 ----------------------------
 * [Vagrant](http://www.vagrantup.com/)
 * [Virtualbox](https://www.virtualbox.org/)
+* (optional) git, to clone the project via command line interface (cli)
 
 
 How to install
@@ -58,6 +59,21 @@ Create the virtual server
 ```bash
 vagrant up
 ```
+
+Optional Configuration
+----------------------------
+Private Network IP Address
+```bash
+  config.vm.network :private_network, ip: "192.168.88.88"
+```
+
+Allocated RAM
+```bash
+  config.vm.provider :virtualbox do |vb|
+    vb.customize ["modifyvm", :id, "--memory", "1024"]
+  end
+```
+
 
 License
 ----------------------------
