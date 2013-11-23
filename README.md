@@ -79,3 +79,9 @@ License
 ----------------------------
 
 All used in this project are open source, and free.  Automated by [Timothy E](http://www.timothyae.com).
+
+
+Automation Support
+----------------------------
+
+Support is free but limited to the automation process only relative to the installation process, et. al..  Vesta customization and problems are not covered.
