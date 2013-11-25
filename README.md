@@ -75,13 +75,24 @@ Allocated RAM
 ```
 
 
+Remaining To Do's and Goals
+----------------------------
+
+* include in the process, the installation of ZSH shell and Oh My ZSH
+* independent Vesta installer
+* auto symlink respective public_html directory into the vagrant synced directory for easy access from host machine, each time a website is added by any user created
+* check for ruby installation, and if there is none, install ruby, gems and compass
+* the git master branch is for local deploy, to deploy to digital ocean, I will add digitalocean branch
+* deployment to AWS, and other services may be possible in the future
+
+
+Support
+----------------------------
+
+Support is limited to the installation process only, and errors it may produce.
+
+
 License
 ----------------------------
 
 All used in this project are open source, and free.  Automated by [Timothy E](http://www.timothyae.com).
-
-
-Automation Support
-----------------------------
-
-Support is free but limited to the automation process only relative to the installation process, et. al..  Vesta customization and problems are not covered.
